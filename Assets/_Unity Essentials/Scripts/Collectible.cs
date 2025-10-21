@@ -28,12 +28,8 @@ public class Collectible : MonoBehaviour
             // Instantiate the particle effect
             Instantiate(onCollectEffect, transform.position, transform.rotation);
 
-            // Update collectible count in the manager
-            CollectibleManager.Instance.Collect();
-
             // Destroy the collectible
             Destroy(gameObject);
-
         }
     }
 }

@@ -5,8 +5,7 @@ using System; // Required for Type handling
 public class UpdateCollectibleCount : MonoBehaviour
 {
     private TextMeshProUGUI collectibleText; // Reference to the TextMeshProUGUI component
-    public GameObject celebrationEffect;
-    private bool hasCelebrated = false;
+    public GameObject confettiCelebration; // Reference to the ConfettiCelebration GameObject
 
     void Start()
     {
@@ -45,11 +44,10 @@ public class UpdateCollectibleCount : MonoBehaviour
         // Update the collectible count display
         collectibleText.text = $"Collectibles remaining: {totalCollectibles}";
 
-        // Check and play effect when user collect all collectibles
-        if (totalCollectibles == 0 && celebrationEffect != null && !hasCelebrated)
+        // Play confetti when all coins are cllected
+        if (totalCollectibles == 0 && confettiCelebration != null)
         {
-            Instantiate(celebrationEffect, Vector3.zero, Quaternion.identity);
-            hasCelebrated = true;
+            confettiCelebration.SetActive(true);
         }
     }
 }
