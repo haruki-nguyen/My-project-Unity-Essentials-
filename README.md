@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a Unity project developed using Unity version **6000.2**. The project is configured to use the **Universal Render Pipeline (URP)** for rendering and targets the **WebGL** platform. It supports both the **New Input System** and the **Legacy Input Manager** for input handling.
+This is a Unity project developed using Unity version **6000.2.6f2**. The project is configured to use the **Universal Render Pipeline (URP)** for rendering and targets the **WebGL** platform. It supports both the **New Input System** and the **Legacy Input Manager** for input handling.
 
 ## Features
 
